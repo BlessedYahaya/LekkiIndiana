@@ -24,7 +24,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="Navbar">
+            <div class="collapse navbar-collapse order-sm-last" id="Navbar">
               <ul class="navbar-nav px-2 mr-auto">
               <li class="nav-item"><a href="#" class="nav-link active"><span class="fa fa-home fa-lg"></span> Home</a></li>
                <li class="nav-item"><a href="aboutus.html" class="nav-link"><span class="fa fa-info fa-lg"></span> About</a></li>
@@ -32,10 +32,51 @@
                 <li class="nav-item"><a href="contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 
             </ul>
+            <span class="navbar-text">
+                <a data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"></span>Login
+                </a>
+            </span>
             </div>
             
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div id="logincontent" class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                       <span style="color: white;"> &times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                         <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-unlock-alt"></i></span>
+                          </div>
+                          <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 
     <header class="jumbotron">
         <div class="container" >
@@ -48,7 +89,7 @@
                     <img src="img/logo.png" class="image-fluid" width="" height="">
                 </div>
                 <div class="col-10 col-sm-3 mr-auto align-self-center">
-                    <a id="no-dec" href="#Reserve"> <button type="button"  class=" btn-block btn-sm btn-warning align-self-center">Reserve Table</button></a>
+                    <a id="no-dec" href="#Reserve" data-toggle="tooltip" data-html="true" title="Or Call us at </br><strong>+2348060439155</strong>"> <button class=" btn-block btn-sm btn-warning align-self-center">Reserve Table</button></a>
                 </div>
                     
                 </div>
@@ -57,6 +98,59 @@
     </header>
 
     <div class="container">
+
+        <div class="rw row-content">
+            
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="img/uthappizza.png" alt="uthappizza" class="d-block image-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                               <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.88</span></h2>
+                                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p> 
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item ">
+                            <img src="img/buffet.png" alt="buffet" class="d-block image-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                               <h2>Weekend Grand Buffet <span class="badge badge-danger ">NEW</span></h2>
+                                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p> 
+                            </div>
+                            
+                        </div>
+
+                        <div class="carousel-item ">
+                            <img src="img/alberto.png" alt="Alberto" class="d-block image-fluid">
+                            <div class="carousel-caption d-none d-md-block">
+                               <h2>Alberto Somayya</h2>
+                               <h4>Executive Chef</h4>
+                                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p> 
+                            </div>
+                            
+                        </div>
+                                            
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" role="button" data-slide="prev" href="#mycarousel">
+                        <span class="carousel-control-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" role="button" data-slide="next" href="#mycarousel">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 colmd-3 order-sm-last">
                  <h3>Our Lipsmacking Culinary Creations</h3>
@@ -212,6 +306,11 @@
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("[data-toggle='tooltip']").tooltip();
+    })
+</script>
 </body>
 
 </html>

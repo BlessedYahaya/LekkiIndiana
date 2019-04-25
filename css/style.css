@@ -58,3 +58,30 @@ a .btn-sm .btn-block:hover {
 	border-bottom: 1px solid #ddd;
 
 }
+
+#logincontent{
+	background: url(https://images.pexels.com/photos/1670035/pexels-photo-1670035.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: floralwhite;
+}
+
+.carousel{
+	background:#512DA8;
+}
+
+.carousel-item{
+	height: 300px;
+}
+
+.carousel-caption{
+	padding-top: 20px;
+}
+
+.carousel-item img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+}
