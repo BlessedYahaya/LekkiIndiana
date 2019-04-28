@@ -10,7 +10,7 @@
 
 //MIXIN
 .zero-margin (@pad-up-dn: 0px, @pad-left-right:0px){
-	margin: px auto;
+	margin: 0px auto;
 	padding:@pad-up-dn @pad-left-right;
 }
 
@@ -33,6 +33,7 @@
 .jumbotron{
 	.zero-margin(70px, 30px);
 	background: @background-light;
+	color:floralwhite;
 }
 
 address{
@@ -57,6 +58,51 @@ body{
 	border-bottom: 1px solid @lt-gray;
 	padding:10px;
 }
+
+//nesting selectors
+
+.carousel{
+	background: @background-dark;
+
+	.carousel-item{
+		height: @carousel-item-height;
+
+		img{
+			position:absolute;
+			top:0;
+			left:0;
+			min-height:300px;
+		}
+	}
+}
+
+#carouselButton{
+	right:0px;
+	position:absolute;
+	bottom:0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
