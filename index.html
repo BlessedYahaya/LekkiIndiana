@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <title>Ristorante Con Fusion</title>
 </head>
@@ -33,7 +33,7 @@
                 
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="no-dec1">
                     <span class="fa fa-sign-in"></span>Login
                 </a>
             </span>
@@ -43,30 +43,31 @@
     </nav>
 
     <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="content">
+        <div class="modal-dialog modal-lg" role="content">
             <div id="logincontent" class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
                     <button type="button" class="close" data-dismiss="modal">
-                       <span style="color: white;"> &times;</span>
+                       <span> &times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-                         <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-unlock-alt"></i></span>
-                          </div>
-                          <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-                        </div>
+                       <div class="form-row">
+                           <div class="col">
+                               <input type="text" class="form-control" name="username" placeholder="Username">
+                           </div>
+                           <div class="col">
+                               <input type="password" class="form-control" name="password" placeholder="Password">
+                           </div>
+                           <div class="col my-1 ml-3">
+                               <input type="checkbox" class="form-check-input " id="remember">
+                               <label class="form-check-label" for="remember">Remember Me</label>
+                           </div>
+                       </div>
                         <div class="form-row">
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                             <button  class="btn btn-secondary offset-9"><b>Cancel</b></button> 
+                            <button type="submit" class="btn btn-primary btn-sm ml-2"><b>Sign in</b></button>
                         </div>
                     </form>
                     
@@ -173,7 +174,7 @@
                     <img src="img/logo.png" class="image-fluid" width="" height="">
                 </div>
                 <div class="col-10 col-sm-3 mr-auto align-self-center">
-                    <a id="no-dec" data-toggle="modal" data-target="#reserveModal"> <button class=" btn-block btn-sm btn-warning align-self-center">Reserve Table</button></a>
+                    <a id="no-dec"> <button class=" btn-block btn-sm btn-warning align-self-center">Reserve Table</button></a>
                 </div>
                     
                 </div>
@@ -407,6 +408,16 @@
 
    $(document).ready(function(){
     $("#mycarousel").carousel({interval:2000});
+
+    $("#no-dec").click(function(){
+        $("#reserveModal").modal('toggle');
+    })
+
+    $("#no-dec1").click(function(){
+        $("#loginModal").modal('toggle');
+    })
+
+
     $("#carouselButton").click(function(){
         if($('#carouselButton').children('i').hasClass('fa-pause')){
            $('#mycarousel').carousel('pause');
@@ -423,12 +434,22 @@
          
         }
     });
-    // $("#carousel-play").click(function(){
-    //     $("#mycarousel").carousel('cycle');
-    // });
-
+    
    });
 
+
+
+
+
+
+
+
+
+
+
+// $("#carousel-play").click(function(){
+    //     $("#mycarousel").carousel('cycle');
+    // });
 
 </script>
 </body>

@@ -40,7 +40,7 @@ body {
 .carousel {
   background: #512DA8; }
   .carousel .carousel-item {
-    height: 300px; }
+    height: 3px; }
     .carousel .carousel-item img {
       position: absolute;
       top: 0;
@@ -51,12 +51,3 @@ body {
   right: 0px;
   position: absolute;
   bottom: 0px; }
-
-.modal-header {
-  background-color: #512DA8;
-  color: floralwhite; }
-  .modal-header span {
-    color: floralwhite; }
-
-.modal-body {
-  background-color: #D1C4E9; }
