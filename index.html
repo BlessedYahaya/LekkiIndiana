@@ -7,19 +7,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style-old.css">
+    <!-- endbuild -->
 
-    <title>Ristorante Con Fusion</title>
+    <title>Eko Indiana</title>
 </head>
 <body>
 
     <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
-        <div class="container">
-
-            
+        <div class="container">           
             <a href="#" class="navbar-brand mr-auto"><img src="img/logo.png" class="image-fluid" width="41" height="30"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -167,7 +167,7 @@
         <div class="container" >
             <div  class="row row-header">
                 <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
+                    <h1>Eko Indiana</h1>
                     <p><b>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</b></p>
                 </div>
                 <div class="col-12 col-sm-3 align-items-center">
@@ -367,11 +367,11 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
+		              12, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone fa-lg icon"></i> Tel.: +852 1234 5678<br>
-		               <i class="fa fa-fax fa-lg"></i> Fax: +852 8765 4321<br>
+		              Lekko Phase I<br>
+		              <i class="fa fa-phone fa-lg icon"></i> Tel.: +234 1234 5678<br>
+		               <i class="fa fa-fax fa-lg"></i> Fax: +234 8765 4321<br>
 		              <i class="fa fa-envelope fa-lg"></i> Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
                 </div>
@@ -388,70 +388,19 @@
            </div>
            <div class="row justify-content-center">             
                 <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                    <p>© Copyright 2019 Eko Indiana</p>
                 </div>
            </div>
         </div>
     </footer>
 
-<script type="text/javascript" src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-<script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-  
-
-  /*  $(document).ready(function(){
-        $("[data-toggle='tooltip']").tooltip();
-    }) */
-
-
-
-   $(document).ready(function(){
-    $("#mycarousel").carousel({interval:2000});
-
-    $("#no-dec").click(function(){
-        $("#reserveModal").modal('toggle');
-    })
-
-    $("#no-dec1").click(function(){
-        $("#loginModal").modal('toggle');
-    })
-
-
-    $("#carouselButton").click(function(){
-        if($('#carouselButton').children('i').hasClass('fa-pause')){
-           $('#mycarousel').carousel('pause');
-            $('#carouselButton').children('i').removeClass('fa-pause');
-            $('#carouselButton').children('i').addClass('fa-play');
-
-       }else if($('#carouselButton').children('i').hasClass('fa-play'))
-
-       {
-        
-        $('#mycarousel').carousel('cycle');
-        $('#carouselButton').children('i').removeClass('fa-play');
-        $('#carouselButton').children('i').addClass('fa-pause');
-         
-        }
-    });
-    
-   });
-
-
-
-
-
-
-
-
-
-
-
-// $("#carousel-play").click(function(){
-    //     $("#mycarousel").carousel('cycle');
-    // });
-
-</script>
+    <!-- jQuery then ppper.js then botstrap -->
+    <!-- build:js js/main.js -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
